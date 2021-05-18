@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>お城にいこう</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/botui/build/botui.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/botui/build/botui-theme-default.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <h1>お城にいこう</h1>
+
+    <!-- データ出力場所 -->
+    <ul id="output"></ul>
+
+
+    <!-- 入力場所を作成しよう -->
+    <ul class="sendtext">
+        <li>
+            <form autocomplete="off">
+                <label for="name">名前</label>
+                <input class="textbox" type="text" id="name">
+            </form>
+        </li>
+        <li>
+            <label for="text">行ったお城</label>
+            <input class="textbox" type="text" id="text">
+        </li>
+        <li>
+            <label for="comment">コメント</label>
+            <textarea class="textbox" name="" id="comment" cols="30" rows="1"></textarea>
+        </li>
+        <li>
+            <button class="btn" id="send">お城登録</button>
+        </li>
+    </ul>
+
+    <button class="btn btn2" id="bot">お城botに聞いてみる</button>
+    <div id="my-botui-app">
+        <bot-ui></bot-ui>
+    </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/botui/0.3.9/botui.min.js"></script>
+    <!-- 以下にfirebaseのコードを貼り付けよう -->
+    <!-- firebase-app.jsの「-app」を外すこと！「firebase.js」にする -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

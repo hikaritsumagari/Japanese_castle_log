@@ -1,0 +1,111 @@
+body{
+    font-size: 18px;
+    font-family: 'Shippori Mincho', serif;
+    max-width: 400px;
+    margin: auto;
+
+}
+h1{
+    font-family: 'Shippori Mincho', serif;
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+h1>button{
+    float: right;
+    margin: 0 3px 0 0;
+}
+
+ul{
+    list-style-type: none;
+    margin: 40px auto;
+    
+}
+li{
+    line-height: 2;
+}
+.btn{
+    font-family: 'Shippori Mincho', serif;
+    border-radius: 15px;
+    width: 200px;
+    height: 40px;
+    background-color: #E98B2A;
+    border: #E98B2A;
+    color: #FCFAF2;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+.btn2{
+    float: right;
+    margin-right: 20px;
+    width: 250px;
+}
+.textbox{
+    border-radius: 10px;
+    height: 30px;
+    width: 200px;
+    border: 2px solid #6C6024;
+}
+.textbox:focus{
+    border: 2px solid #838A2D;
+}
+.sendtext{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-right: 20px;
+}
+.sendtext>li{
+    display: inline;
+    margin: 5px;
+}
+#output{
+    overflow: auto;
+    height: 400px;
+    width: 300px;
+    margin: auto; 
+    background-color: #FAD689;
+}
+#output li {
+    background: #838A2D;
+    color: #FCFAF2;
+    font-size: 10px;
+    line-height: 1;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.size_10 {
+    font-size: 18px;
+}
+
+
+
+
+/* botui */
+#my-botui-app{
+    overflow: auto;
+    height: 250px;
+    width: 350px;
+    margin: auto;  
+}
+.botui-container {
+    height: 100px;
+    width: 350px;
+}
+.botui-message-content.text,.botui-message-content.html {
+    background-color: #DAC9A6;
+    color: #08192D;
+    font-family: 'Shippori Mincho', serif;
+}
+.human.botui-message-content.text {
+    background-color: #7B90D2;
+    color: #FCFAF2;
+    font-family: 'Shippori Mincho', serif;
+}
+.botui-actions-buttons-button {
+    font-family: 'Shippori Mincho', serif;
+}
